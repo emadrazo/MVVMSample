@@ -13,9 +13,9 @@ protocol AlbumServiceType {
 }
 
 class AlbumService: AlbumServiceType {
-    var apiClient:ApiClient
+    var apiClient:ApiClientType
     
-    init(apiClient:ApiClient){
+    init(apiClient:ApiClientType){
         self.apiClient = apiClient
     }
     
