@@ -1,6 +1,6 @@
 import Foundation
 
-@testable import WoomTest
+@testable import MVVMSample
 
 func getJSONDictionaryFromFile(named fileName: String, inBundle bundle: Bundle) -> JSONDictionary {
     let path = bundle.path(forResource: fileName, ofType: "json")!

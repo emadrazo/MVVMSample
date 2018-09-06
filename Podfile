@@ -2,7 +2,7 @@
 platform :ios, '9.0'
 use_frameworks!
 
-target 'WoomTest' do
+target 'MVVMSample' do
     pod 'Alamofire', '~>  4.7'
     pod 'AlamofireImage', '~>  3.3'
     pod 'Swinject', '~>  2.4'
@@ -10,7 +10,7 @@ target 'WoomTest' do
     pod 'RxCocoa'
 end
 
-target 'WoomTestTests' do
+target 'MVVMSampleTests' do
 inherit! :search_paths
 # Pods for testing
     pod 'Quick'
