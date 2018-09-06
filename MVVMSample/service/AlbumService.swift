@@ -4,7 +4,6 @@ import RxSwift
 public struct URLConstants {
     static let albumsURL = "https://jsonplaceholder.typicode.com/albums"
     static let albumPhotosURL = "https://jsonplaceholder.typicode.com/photos"
-    //https://jsonplaceholder.typicode.com/photos?albumId=1&userId=1
 }
 
 protocol AlbumServiceType {
