@@ -1,7 +1,9 @@
-/* 
-  Localizable.strings
-  WoomTest
 
-  Created by Eva Madrazo on 05/09/2018.
-  Copyright © 2018 Eva Madrazo. All rights reserved.
-*/
+"noInternetConection" = "No dispones de conexión a Internet";
+"networkError"="Ha habido algún problema con el servicio";
+"timeoutError"="El servicio responde con timeout";
+
+"AlbumPhotosTitle"="Fotos del álbum";
+"AlbumsTitle"="Albums";
+
+"retry"="Reintentar";

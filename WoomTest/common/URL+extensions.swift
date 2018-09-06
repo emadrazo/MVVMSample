@@ -1,9 +1,9 @@
-//
-//  URL+extensions.swift
-//  WoomTest
-//
-//  Created by Eva Madrazo on 06/09/2018.
-//  Copyright © 2018 Eva Madrazo. All rights reserved.
-//
+import UIKit
 
-import Foundation
+extension URL {
+    func openInApp() {
+        if UIApplication.shared.canOpenURL(self) {
+            UIApplication.shared.open(self)
+        }
+    }
+}

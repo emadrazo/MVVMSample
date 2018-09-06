@@ -2,11 +2,6 @@ import Foundation
 import RxSwift
 
 public protocol ApiClientType {
-    
-    associatedtype Ent
-    
-    func getEntity(forResource resource: Resource) -> Observable<Ent>
-    
-    func getEntitiyList(forResource resource: Resource) -> Observable<[Ent]>
+    func getEntity<T:JSONDecodable>(forResource resource: Resource) -> Observable<T>
+    func getEntitiyList<T:JSONDecodable>(forResource resource: Resource) -> Observable<[T]>
 }
-

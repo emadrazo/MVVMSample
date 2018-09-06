@@ -1,5 +1,5 @@
 import Foundation
-struct AlbumDetail {
+struct AlbumPhoto {
     var identifier:Int
     var albumId:Int
     var title:String

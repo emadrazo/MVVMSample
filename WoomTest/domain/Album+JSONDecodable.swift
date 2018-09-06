@@ -1,9 +1,15 @@
-//
-//  Album+JSONDecodable.swift
-//  WoomTest
-//
-//  Created by Eva Madrazo on 04/09/2018.
-//  Copyright © 2018 Eva Madrazo. All rights reserved.
-//
-
-import Foundation
+extension Album:JSONDecodable{
+    init(dictionary: JSONDictionary) throws {
+        guard let identifier = dictionary["id"] as? Int else{
+            throw JSONError.MandatoryFieldNotFound
+        }
+        
+        guard let userId = dictionary["userId"] as? Int else{
+            throw JSONError.MandatoryFieldNotFound
+        }
+        
+        self.identifier = identifier
+        self.userId = userId
+        self.title = dictionary["title"] as? String ?? ""
+    }
+}

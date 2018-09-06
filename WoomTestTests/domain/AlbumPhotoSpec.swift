@@ -24,7 +24,7 @@ class AlbumPhotoSpec: QuickSpec {
         describe("Parse") {
             it("shoud create a AlbumPhoto from JSON") {
                 
-                let jsonData = getJSONDictionaryFromFile(named: "AlbumPhoto", inBundle: Bundle(for: type(of: self)))
+                let jsonData = getJSONDictionaryFromFile(named: "albumPhoto", inBundle: Bundle(for: type(of: self)))
                 
                 let sut = try? AlbumPhoto(dictionary: jsonData)
                 

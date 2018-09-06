@@ -1,9 +1,14 @@
-//
-//  UINavigationBar+Stylable.swift
-//  WoomTest
-//
-//  Created by Eva Madrazo on 06/09/2018.
-//  Copyright © 2018 Eva Madrazo. All rights reserved.
-//
+import UIKit
 
-import Foundation
+extension UINavigationBar: Stylable {
+    func style(_ style: TextStyle) {
+        
+        let attrs = [
+            NSAttributedStringKey.foregroundColor: style.foregroundColor,
+            NSAttributedStringKey.font: style.font
+        ]
+        
+        self.titleTextAttributes = attrs
+        self.backgroundColor = style.backgroundColor
+    }
+}

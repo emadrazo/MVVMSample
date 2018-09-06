@@ -1,9 +1,13 @@
-//
-//  Resource.swift
-//  WoomTest
-//
-//  Created by Eva Madrazo on 05/09/2018.
-//  Copyright © 2018 Eva Madrazo. All rights reserved.
-//
-
 import Foundation
+
+public typealias ParametersDictionary = [String : Any]
+
+public struct Resource {
+    public var url: URL
+    public var parameters: ParametersDictionary?
+    
+    public init(url: URL, parameters: ParametersDictionary?) {
+        self.url = url
+        self.parameters = parameters
+    }
+}
